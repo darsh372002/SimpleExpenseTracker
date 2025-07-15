@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Expense Splitter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Smart Expense Splitter</h1>
+
+    <!-- Expense Input Form -->
+    <div id="input-form">
+      <div class="form-group">
+        <input type="text" id="item" placeholder="Expense Item (e.g. Hotel)">
+        <input type="number" id="amount" placeholder="Amount">
+      </div>
+      <div class="form-group">
+        <input type="text" id="payer" placeholder="Paid by (e.g. Darshan)">
+        <input type="text" id="participants" placeholder="Participants (comma separated)">
+      </div>
+      <div class="form-group">
+        <button class="btn" id="add-btn">Add Expense</button>
+        <button class="btn" id="calculate-btn">Calculate Split</button>
+      </div>
+    </div>
+
+    <!-- Expense List -->
+    <div id="expenses-list"></div>
+
+    <!-- Summary Section -->
+    <div id="summary"></div>
+
+    <!-- History by Person -->
+    <h3>Expense History by Person</h3>
+    <div id="history"></div>
+
+    <!-- Export Options -->
+    <h3>Export</h3>
+    <div class="form-group">
+      <button class="btn" id="export-csv">Export as CSV</button>
+      <button class="btn" id="export-pdf">Export as PDF</button>
+      <button class="btn" id="export-whatsapp">Copy WhatsApp Message</button>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+:root {
+  --primary: #4e54c8;
+  --accent: #8f94fb;
+  --bg: #f4f6fc;
+  --text: #333;
+  --white: #fff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  padding: 20px;
+}
+
+/* Container Box */
+.container {
+  max-width: 700px;
+  margin: 40px auto;
+  background: var(--white);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--text);
+}
+
+h3 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: var(--text);
+}
+
+/* Form Styles */
+.form-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.form-group input,
+.form-group select {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+/* Buttons */
+.btn,
+button {
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.btn:hover,
+button:hover {
+  background: var(--accent);
+}
+
+/* Expense List */
+#expenses-list {
+  margin-top: 20px;
+  background: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+/* Each Expense Row */
+.expense-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  border-bottom: 1px solid #eee;
+}
+
+/* Summary Section */
+#summary {
+  margin-top: 20px;
+  padding: 10px;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+/* History Section */
+#history {
+  margin-top: 10px;
+  padding: 10px;
+  background: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.tag {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 999px;
+  color: white;
+  font-size: 0.8em;
+  margin: 2px 4px 2px 0;
+}
+
+
+/* Responsive Improvements */
+@media (max-width: 600px) {
+  .form-group {
+    flex-direction: column;
+  }
+
+  .form-group input,
+  .form-group select {
+    width: 100%;
+  }
+
+  .btn,
+  button {
+    width: 100%;
+  }
+}
